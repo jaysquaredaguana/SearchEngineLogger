@@ -39,7 +39,7 @@ public class Main {
             FileWriter fileWriter = new FileWriter("logs.txt", true);
             BufferedWriter writer = new BufferedWriter(fileWriter);
 
-            DateTimeFormatter fmt = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");;
+            DateTimeFormatter fmt = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
             String timestamp = LocalDateTime.now().format(fmt);
             writer.write(timestamp + " " + action);
             writer.newLine();
